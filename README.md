@@ -19,7 +19,7 @@ pyenv local nacl_sdd
 poetry env use python
 poetry install
 ```
-4. The Wav2vec2.0 model (XLS-R 300M) can be dowloaded from [here](https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec/xlsr). 
+4. The Wav2vec2.0 model (XLS-R 300M) can be downloaded from [here](https://github.com/facebookresearch/fairseq/tree/main/examples/wav2vec/xlsr). 
 
 ## Data Preparation
 1. Downlaod datasets
