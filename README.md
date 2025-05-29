@@ -2,7 +2,7 @@
 This repository contains our implementation and pretrained models of the paper accepted by Interspeech 2025.
    * **Title**: Naturalness-Aware Curriculum Learning with Dynamic Temperature for Speech Deepfake Detection
    * **Author**: Taewoo Kim, Guisik Kim, Choongsang Cho, Young Han Lee
-   * **affiliation**: Korea Electronics Technology Institute
+   * **Affiliation**: Korea Electronics Technology Institute (KETI)
    * [Paper](https://arxiv.org/abs/2505.13976)
 
 ## Environment
