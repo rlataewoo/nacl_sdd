@@ -1,0 +1,49 @@
+model:
+  name: "XLSR_Conformer"
+  dim: 144
+  heads: 4
+  kernel_size: 31
+  num_layers: 4
+  
+training:
+  epochs: 100
+  patience: 7
+  n_mejores: 5
+  batch_size: 20
+  average_model: true
+  learning_rate: 0.000001
+  weight_decay: 0.0001
+  optimizer: "adam"
+  num_workers: 8
+  log_dir: "logs/LA/XLSR_Conformer"
+
+data:
+  path_train: "datasets/ASVspoof2019_LA_train"
+  path_train_protocol: "datasets/protocols/ASVspoof2019.LA.cm.train.trn.txt"
+  path_val: "datasets/ASVspoof2019_LA_dev"
+  path_val_protocol: "datasets/protocols/ASVspoof2019.LA.cm.dev.trl.txt"
+  path_eval: "datasets/ASVspoof2021_LA_eval"
+  path_eval_protocol: "datasets/protocols/ASVspoof2021.LA.cm.eval.trl.txt"
+
+augmentation:
+  algo: 5 # for LA
+  # LnL_convolutive_noise parameters 
+  nBands: 5
+  minF: 20
+  maxF: 8000
+  minBW: 100
+  maxBW: 1000
+  minCoeff: 10
+  maxCoeff: 100
+  minG: 0
+  maxG: 0
+  minBiasLinNonLin: 5
+  maxBiasLinNonLin: 20
+  N_f: 5
+  # ISD_additive_noise parameters
+  P: 10
+  g_sd: 2
+  # SSI_additive_noise parameters
+  SNRmin: 10
+  SNRmax: 40
+

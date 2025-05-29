@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "nacl_sdd"
+version = "0.1.0"
+description = ""
+authors = ["anonymous <anonymous@example.com>"]
+readme = "README.md"
+packages = [{include = "nacl_sdd"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+torch = {url = "https://download.pytorch.org/whl/cu113/torch-1.12.1%2Bcu113-cp38-cp38-linux_x86_64.whl"}
+torchaudio = {url = "https://download.pytorch.org/whl/cu113/torchaudio-0.12.1%2Bcu113-cp38-cp38-linux_x86_64.whl"}
+torchvision = {url = "https://download.pytorch.org/whl/cu113/torchvision-0.13.1%2Bcu113-cp38-cp38-linux_x86_64.whl"}
+librosa = "0.9.1"
+conformer = "^0.3.2"
+pandas = "^1.3.5"
+numpy = "1.21.6"
+numba = "0.56.4"
+tensorboardx = "^2.6.2.2"
+protobuf = "3.20"
+accelerate = "^1.0.1"
+torchinfo = "^1.8.0"
+fairseq = { git = "https://github.com/facebookresearch/fairseq.git", rev = "a54021305d6b3c4c5959ac9395135f63202db8f1" }
+matplotlib = "3.4.3"
+h5py = "3.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

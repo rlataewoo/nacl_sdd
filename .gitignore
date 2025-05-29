@@ -1,0 +1,8 @@
+xlsr2_300m.pt
+.python-version
+poetry.lock
+__pycache__/
+logs
+datasets/
+pretrained/
+results/
